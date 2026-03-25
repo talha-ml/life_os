@@ -1,0 +1,69 @@
+name: life_os
+description: "A Premium Task Management & Mood Tracking App for Mid-Term Project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- State Management ---
+  flutter_riverpod: ^2.4.9
+
+  # --- Database (Core Requirement) ---
+  sqflite: ^2.3.0
+  path: ^1.8.3
+
+  # --- UI & Animations (Premium Feel) ---
+  google_fonts: ^8.0.2
+  percent_indicator: ^4.2.3
+  lottie: ^3.3.2              # For high-quality vector animations
+  fl_chart: ^1.2.0            # For Insights and Analytics
+  table_calendar: ^3.1.3      # For Mission Planning
+
+  # --- Logic, Dates & Formatting ---
+  intl: ^0.19.0
+  csv: ^6.0.0                # For Excel/CSV Export
+
+  # --- Notifications ---
+  flutter_local_notifications: ^17.1.2
+  timezone: ^0.9.2
+
+  # --- Security & Auth ---
+  local_auth: ^2.1.6          # Fixed version for better compatibility
+
+  # --- File Handling & Export ---
+  pdf: ^3.10.8
+  path_provider: ^2.1.2
+  share_plus: ^7.2.1
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+# 🚀 LAUNCHER ICON CONFIGURATION
+flutter_launcher_icons:
+  android: "launcher_icon" # Standard for Android
+  ios: false
+  image_path: "assets/icon/app_icon.png" # Path to your image
+
+  # ✨ Android Adaptive Icons (Professional touch for modern Android)
+  # adaptive_icon_background: "#6C63FF" # Insert your primary brand color here (e.g., Indigo)
+  # adaptive_icon_foreground: "assets/icon/app_icon.png" # Often just use the same image, or a variation
+
+  # 🚀 IMPORTANT: Agar aapne koi local Lottie files ya Images use karni hain,
+  # toh unhe yahan uncomment karke define karna hoga.
+  # assets:
+  #   - assets/lottie/
+  #   - assets/images/
